@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1050" viewBox="0 0 1800 1050">
+<defs>
+ <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#45483f"/><stop offset=".48" stop-color="#85877c"/><stop offset="1" stop-color="#d2d0c4"/></linearGradient>
+ <linearGradient id="stone" x1=".1" y1=".2" x2=".9" y2=".9"><stop stop-color="#f4f0e6"/><stop offset=".55" stop-color="#c9c6b9"/><stop offset="1" stop-color="#8c8e80"/></linearGradient>
+ <linearGradient id="arch" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#eae6da"/><stop offset=".5" stop-color="#9f9f91"/><stop offset="1" stop-color="#454a41"/></linearGradient>
+ <linearGradient id="sphere" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf0"/><stop offset=".5" stop-color="#b7b9aa"/><stop offset="1" stop-color="#5f665c"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="48"/></filter>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="-25" dy="35" stdDeviation="33" flood-color="#20251e" flood-opacity=".28"/></filter>
+ <pattern id="grain" width="150" height="150" patternUnits="userSpaceOnUse"><circle cx="10" cy="20" r=".8" fill="#fff" opacity=".11"/><circle cx="80" cy="110" r=".6" fill="#181d17" opacity=".1"/></pattern>
+</defs>
+<rect width="1800" height="1050" fill="url(#bg)"/>
+<path d="M710 -170 L1800 -170 L1800 130 L480 1050 L-140 1050 Z" fill="#fff8e8" opacity=".22" filter="url(#blur)"/>
+<g filter="url(#shadow)"><path fill="url(#arch)" fill-rule="evenodd" d="M1120 115 C1420 115 1670 365 1670 655 L1670 1120 L960 1120 L960 655 C960 357 1050 115 1120 115 Z M1295 390 C1158 390 1087 493 1087 675 L1087 1120 L1540 1120 L1540 675 C1540 515 1435 390 1295 390 Z" transform="rotate(-13 1310 620)"/></g>
+<ellipse cx="1285" cy="948" rx="540" ry="104" fill="#363d35" opacity=".25" filter="url(#blur)"/>
+<g filter="url(#shadow)"><circle cx="1435" cy="760" r="310" fill="url(#sphere)"/><path d="M1210 460 C1395 390 1632 515 1689 705" stroke="#f9f7ed" stroke-opacity=".45" stroke-width="7" fill="none"/></g>
+<path d="M705 870 C860 565 1115 506 1370 595 C1480 632 1565 740 1593 875 C1355 790 1170 845 970 1020 L675 1100 Z" fill="url(#stone)" filter="url(#shadow)"/>
+<path d="M1030 1050 Q1435 810 1800 885 L1800 1050 Z" fill="#d6d1c4" opacity=".73"/>
+<rect width="1800" height="1050" fill="url(#grain)"/>
+<rect width="1800" height="1050" fill="#1d251e" opacity=".12"/>
+</svg>
